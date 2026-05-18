@@ -1,0 +1,11 @@
+.user-page {
+  min-height: 100vh;
+  background-color: #14181c;
+}
+
+.user-page-content {
+  width: 1100px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+  padding-bottom: 60px;
+}

@@ -1,0 +1,259 @@
+.user-reviews-section {
+  width: 100%;
+}
+
+.user-reviews-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.user-reviews-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+}
+
+.user-reviews-count {
+  font-size: 13px;
+  font-weight: 700;
+  color: #8fa0af;
+}
+
+.user-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px 16px;
+}
+
+.user-review-group-card {
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.user-review-group-poster {
+  display: block;
+}
+
+.user-review-group-poster img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.user-review-group-body {
+  padding: 14px;
+}
+
+.user-review-group-header {
+  margin-bottom: 12px;
+}
+
+.user-review-group-title {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.4;
+}
+
+.user-review-group-count {
+  font-size: 12px;
+  color: #7f93a6;
+}
+
+.user-review-preview-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-review-preview-item {
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.user-review-preview-item:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.user-review-preview-text {
+  margin: 0 0 6px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #dbe3ea;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.user-review-preview-rating {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+}
+
+.user-reviews-empty {
+  padding: 28px 0;
+  color: #9fb0bf;
+  font-size: 15px;
+}
+
+@media (max-width: 1100px) {
+  .user-reviews-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .user-reviews-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .user-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .user-reviews-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.user-review-status-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.user-review-status {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.user-review-status.watched {
+  background: rgba(34, 197, 94, 0.18);
+  color: #4ade80;
+}
+
+.user-review-status.liked {
+  background: rgba(244, 63, 94, 0.18);
+  color: #fb7185;
+}
+
+.user-review-status.watchlater {
+  background: rgba(59, 130, 246, 0.18);
+  color: #60a5fa;
+}
+
+.user-review-activity-summary {
+  margin-bottom: 14px;
+}
+
+.user-review-stars {
+  color: #22c55e;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.user-review-summary-text {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.user-review-preview-rating {
+  display: inline-block;
+  margin-top: 8px;
+  color: #22c55e;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.user-review-edit-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-review-edit-textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.user-review-edit-stars {
+  display: flex;
+  gap: 6px;
+}
+
+.user-review-edit-star-btn {
+  border: none;
+  background: transparent;
+  color: #475569;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.user-review-edit-star-btn.active {
+  color: #22c55e;
+}
+
+.user-review-action-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.user-review-action-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.user-review-action-btn.save {
+  background: #00c030;
+  color: white;
+}
+
+.user-review-action-btn.cancel {
+  background: #475569;
+  color: white;
+}
+
+.user-review-action-btn.edit {
+  background: rgba(59, 130, 246, 0.18);
+  color: #60a5fa;
+}
+
+.user-review-action-btn.delete {
+  background: rgba(244, 63, 94, 0.18);
+  color: #fb7185;
+}

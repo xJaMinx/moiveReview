@@ -1,0 +1,158 @@
+.user-navbar {
+  width: 1100px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto 28px;
+  padding-top: 40px;
+  color: white;
+}
+
+.user-navbar-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.user-navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+}
+
+.user-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00c030, #19b8ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  flex-shrink: 0;
+}
+
+.user-meta {
+  min-width: 0;
+}
+
+.user-name {
+  margin: 0 0 6px;
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  line-height: 1.1;
+}
+
+.user-email {
+  margin: 0;
+  font-size: 14px;
+  color: #9fb0bf;
+}
+
+.user-stats {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.user-stat-box {
+  min-width: 72px;
+  text-align: center;
+}
+
+.user-stat-box strong {
+  display: block;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.user-stat-box span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #7f93a6;
+}
+
+.user-nav-menu {
+  display: flex;
+  gap: 22px;
+  padding-top: 16px;
+  flex-wrap: wrap;
+}
+
+.user-nav-link {
+  position: relative;
+  color: #b7c3cf;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 0.7px;
+  padding-bottom: 8px;
+  transition: color 0.2s ease;
+}
+
+.user-nav-link:hover {
+  color: white;
+}
+
+.user-nav-link.active {
+  color: white;
+}
+
+.user-nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background-color: #00c030;
+}
+
+@media (max-width: 900px) {
+  .user-navbar-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-stats {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .user-navbar {
+    max-width: calc(100% - 24px);
+    padding-top: 28px;
+  }
+
+  .user-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .user-name {
+    font-size: 24px;
+  }
+
+  .user-stat-box strong {
+    font-size: 24px;
+  }
+
+  .user-nav-menu {
+    gap: 16px;
+  }
+}

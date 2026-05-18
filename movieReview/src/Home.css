@@ -1,0 +1,350 @@
+/* 홈 페이지 배경 전체를 어둡게 유지 */
+#outer {
+    background-color: #141414;
+    padding: 0; /* 배너가 꽉 차게 하기 위해 일단 0으로 */
+}
+
+#main-banner-huge {
+    width: 100%;
+    height: 60vh; /* 화면 높이 */
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.hugeSwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.huge-slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center 20%; /* 영화 포스터의 위쪽이 더 잘 보이게 */
+    display: flex;
+    align-items: center; /* 텍스트를 세로 중앙에 배치 */
+    padding: 0 5%; /* 좌우 여백 5% */
+}
+
+.huge-info {
+    position: relative;
+    width: 40%; /* 텍스트 박스 너비 조절 */
+    color: white;
+    z-index: 10;
+}
+
+.trending-tag {
+    display: inline-block; /* 크기 적용을 위해 필요 */
+    background-color: #e50914; /* 넷플릭스 시그니처 레드 */
+    color: white; /* 글자색 */
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 살짝 그림자 추가 */
+}
+
+.huge-info h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+    line-height: 1.1;
+    word-break: keep-all;
+}
+
+.huge-info p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* 줄거리 4줄까지만 표시 */
+    -webkit-box-orient: vertical;
+    line-clamp: 4;
+    overflow: hidden;
+    color: #efefef;
+}
+
+/* 버튼 스타일링 */
+.huge-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.play-btn {
+    padding: 12px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+
+.play-btn:hover { background-color: rgba(255,255,255,0.7); }
+
+.info-btn {
+    padding: 12px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+    transition: 0.2s;
+}
+
+.info-btn:hover { background-color: rgba(109, 109, 110, 0.4); }
+
+
+
+
+
+#outer {
+    background-color: #141414;
+    min-height: 100vh;
+    color: white;
+}
+
+/* 로그인 박스 */
+#login-box {
+    padding: 20px 5%;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* 메인 거대 배너 섹션 */
+#main-banner-huge {
+    width: 100%;
+    height: 80vh; /* 화면 높이의 80% 차지 */
+    position: relative;
+}
+
+.hugeSwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.huge-slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    transition: filter 0.3s ease;
+}
+
+.huge-slide:hover {
+    filter: brightness(1.1);
+}
+
+/* 배너 내부 정보 */
+.huge-info {
+    max-width: 600px;
+    z-index: 2;
+}
+
+.trending-tag {
+    display: inline-block;
+    background-color: #e50914;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.huge-info h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.huge-info p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 표준 속성 호환 */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* 하단 콘텐츠 섹션 */
+.content-section {
+    padding: 40px 5%;
+}
+
+.movie-row {
+    margin-bottom: 40px;
+}
+
+.movie-row h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* 서브 영화 카드 */
+.sub-movie-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sub-movie-card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.sub-movie-card img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+/* 카드 위 텍스트 오버레이 */
+.card-overlay {
+    padding: 10px 5px;
+}
+
+.card-title {
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-rate {
+    color: #ffad08;
+    font-size: 0.8rem;
+}
+
+/* 로딩창 스타일 */
+.loading-screen {
+    color: white;
+    padding: 100px;
+    text-align: center;
+    background-color: #141414;
+    height: 100vh;
+}
+
+
+
+
+/* 배경을 어둡게 덮는 레이어 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85); /* 주변을 어둡게 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* 중앙 필터 박스 */
+.filter-modal {
+    background-color: #181818;
+    width: 580px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.filter-modal h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255); /* 강조 레드 */
+}
+
+/* 테이블 레이아웃 */
+.filter-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.filter-table th {
+    text-align: left;
+    padding: 20px 0;
+    color: #aaa;
+    font-size: 0.9rem;
+    width: 30%;
+}
+
+.filter-table td {
+    padding: 15px 0;
+}
+
+/* 연도 버튼들 */
+.year-buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.year-btn {
+    padding: 8px 15px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    min-width: 70px; /* 버튼 최소 너비 설정으로 균형감 부여 */
+    transition: all 0.2s;
+}
+
+.year-btn.active {
+    background: #e50914;
+    border-color: #e50914;
+}
+
+/* 하단 버튼 영역 */
+.modal-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.close-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-btn {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+

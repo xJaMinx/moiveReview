@@ -1,0 +1,159 @@
+.user-likes-section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px 40px;
+  color: white;
+}
+
+.user-likes-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #334155;
+}
+
+.user-likes-heading {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.user-likes-count {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.user-likes-empty {
+  min-height: 220px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #94a3b8;
+}
+
+.user-likes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 18px;
+}
+
+.user-like-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-like-poster-link {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #1e293b;
+  transition: transform 0.2s ease;
+}
+
+.user-like-poster-link:hover {
+  transform: translateY(-4px);
+}
+
+.user-like-poster {
+  width: 100%;
+  display: block;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.user-like-meta {
+  padding-top: 10px;
+}
+
+.user-like-title {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.user-like-year {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.user-likes-tabs {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #334155;
+}
+
+.user-likes-tab {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 0 8px;
+}
+
+.user-likes-tab.active {
+  color: white;
+  border-bottom: 2px solid #00c030;
+}
+
+.user-review-likes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.user-review-like-card {
+  padding: 16px;
+  border-radius: 10px;
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+.user-review-like-movie {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.user-review-like-content {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.user-list-likes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.user-list-like-card {
+  padding: 18px;
+  border-radius: 10px;
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+.user-list-like-title {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.user-list-like-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #94a3b8;
+}
